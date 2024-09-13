@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function Sample(props: {cookieValue?: string}){
+export default function SomeContainer(props: {cookieValue?: string}){
   useEffect(() => console.log("Loaded"), []);
   return <div>
     <h1>Sample Component</h1>

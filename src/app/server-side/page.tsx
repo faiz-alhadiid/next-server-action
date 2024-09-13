@@ -1,7 +1,7 @@
 'use server'
 
 import { getCookie } from "@/app/actions/cookie"
-import Sample from "@/ui/Sample";
+import SomeContainer from "@/ui/SomeContainer";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -16,6 +16,6 @@ export default async function Page(){
     // redirection is also possible
     // redirect()
 
-    // Sample and its child & dependencies will be rendered as client component since it has 'use client' directive
-    return <Sample cookieValue={value?.value}/>;
+    // SomeContainer and its child & dependencies will be rendered as client component since it has 'use client' directive
+    return <SomeContainer cookieValue={value?.value}/>;
 }
